@@ -2,7 +2,9 @@
 
 * {
     font-family: 'VT323', monospace;
+    user-select: none;
 }
+
 
 html {
     background-image: url("../img/background.jpg");
