@@ -15,6 +15,16 @@ html {
     display: table;
     margin: 0 auto;
     margin-top: 10em;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+.cookie .farms .buttonContainer {
+    width: 33%;
+    display: flex;
+    justify-content: center;
 }
 
 #cookie {
@@ -24,6 +34,7 @@ html {
     margin: 0 auto;
     transition: .3s ease;
     cursor: pointer;
+    
 }
 
 #counter {
