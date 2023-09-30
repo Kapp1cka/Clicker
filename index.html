@@ -5,26 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie clicker</title>
+    <title>CS Clicker</title>
     <link rel="stylesheet" href="./res/css/style.css">
     <link rel="shortcut icon" href="./res/img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
+<!--Nav togglujici modaly ve kterych jsou upgrady-->
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="modal" data-bs-target="#Modal1">Click Upgrades</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link disabled" data-bs-toggle="modal" data-bs-target="#Modal2">Farms
+                        Upgrades</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link disabled" data-bs-toggle="modal" data-bs-target="#Modal3">Power UPs</button>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Modal1Label">Click upgrades</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal body -->
+                    <div class="container text-center">
+                        <div class="row row-cols-">
+                        <div class="col">
+                            <div class="card" style="width: 100%;">
+                                <img src="res/img/upgrade.jpg" alt="kys" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic click upgrade</h5>
+                                    <button class="upgradebutton btn-primary" id="clickUpgrade">Buy: 2O</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 100%;">
+                                <img src="res/img/upgrade.jpg" alt="kys" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic click upgrade</h5>
+                                    <button class="upgradebutton btn-primary" id="clickUpgrade">Buy: 2O</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 100%;">
+                                <img src="res/img/upgrade.jpg" alt="kys" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic click upgrade</h5>
+                                    <button class="upgradebutton btn-primary" id="clickUpgrade">Buy: 2O</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 100%;">
+                                <img src="res/img/upgrade.jpg" alt="kys" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic click upgrade</h5>
+                                    <button class="upgradebutton btn-primary" id="clickUpgrade">Buy: 2O</button>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Modal body -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Modal2Label">Farms</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal body -->
+                    <button class="upgradebutton" id="autoClicker">Buy Slave: 100</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="Modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Modal3Label">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal body -->
+                    ...
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--klikačka + visual farem/upgradu-->
     <div id="container">
         <div class="cookie">
-            <img id="cookie" src="./res/img/cookie.png" alt="Cookie">
-            <p id="counter">Cookies: 0</p>
-        </div>
-        <div class="farms">
-            <img src="data:image/jpeg;base64,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" alt="">
-        </div>
-        <div class="buttonContainer">
-            <button class="upgradebutton" id="clickUpgrade">Buy click upgrade: 2O</button>
-            <button class="upgradebutton" id="autoClicker">Buy Slave: 100</button>
+            <img id="cookie" src="./res/img/defglock.png" alt="Cookie">
+            <p id="counter">Bullets: 0</p>
         </div>
     </div>
     <script src="./res/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 * {
-    font-family: 'VT323', monospace;
+    font-family: 'Rubik Mono One', sans-serif;
     user-select: none;
 }
 
 
-html {
+html, body {
     background-image: url("../img/background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 #container {
@@ -19,6 +20,8 @@ html {
     flex-direction: row ;
     flex-wrap: nowrap;
     justify-content: space-between;
+    background-color: none !important;
+    z-index: -1;
     
 }
 .cookie .farms .buttonContainer {

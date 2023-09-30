@@ -58,6 +58,9 @@ autoClicker.onclick = () => {
 
 
 
+
+
+
 //CHEATY!!!!!
 //function nazev()  {}
 function cheats() {
@@ -72,6 +75,9 @@ const cheats2 = () => {
     numberOfCookies *= 2;
     counter.innerHTML = "Cookies: " + numberOfCookies;
 }
+
+
+
 
 
 cheats();
