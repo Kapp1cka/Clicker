@@ -4,6 +4,7 @@
 * {
     font-family: 'Rubik Mono One', sans-serif;
     user-select: none;
+    
     color: rgb(179, 80, 0) !important;
 }
 
@@ -23,7 +24,7 @@ html, body {
 
     max-width: 400px !important;
     max-height: auto !important;
-    transition: width 0.4ms ease-in-out !important;
+    transition: transform 0.4ms ease-in-out !important;
     cursor: pointer !important;
 }
 #counter {
@@ -40,5 +41,5 @@ html, body {
     height: auto !important;
 }
 #cookie:active {
-    width: 375px;
+    transform: scale(0.9);
 }
