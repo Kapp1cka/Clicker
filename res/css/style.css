@@ -1,70 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
 * {
     font-family: 'Rubik Mono One', sans-serif;
     user-select: none;
+    color: rgb(179, 80, 0) !important;
 }
 
 
 html, body {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
-
 #container {
-    display: table;
-    margin: 0 auto;
-    margin-top: 10em;
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    background-color: none !important;
-    z-index: -1;
-    
-}
-.cookie .farms .buttonContainer {
-    width: 33%;
-    display: flex;
-    justify-content: center;
+    height: 100%;
+
 }
 
 #cookie {
-    max-width: 180px;
-    width: 100%;
-    display: table;
-    margin: 0 auto;
-    transition: .3s ease;
-    cursor: pointer;
+
+    max-width: 400px !important;
+    max-height: auto !important;
+    transition: width 0.4ms ease-in-out !important;
+    cursor: pointer !important;
+}
+#counter {
+    font-size: 35px;
+    
     
 }
-
-#counter {
-    font-size: 56px;
-    font-weight: bold;
-    text-align: center;
+.card, cardbody {
+    background-color: rgba(0, 0, 0, 0.185) !important;
+    border: solid black 1px !important;
 }
-
-#cookie:hover {
-    transform: scale(1.1);
+#shopIcon {
+    width: 64px !important;
+    height: auto !important;
 }
-.upgradebutton {
-    font-size:  24px;
-    border: none;
-    background-color: rgba(127, 255, 212, 0.238);
-    border-radius: 20%;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    margin: 10px;
-    padding: 5px;
-    text-align: left;
-}
-.upgradebutton:hover {
-    background-color:rgba(127, 255, 212, 0.438) ;
-}
-.buttonContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+#cookie:active {
+    width: 375px;
 }
