@@ -30,7 +30,7 @@ let ExcavatorIncrease = 10;
 
 upgradeResource.onclick = () => {
     if (upgradeCount >= resourceUpgradePrice && numberOfCookies >= resourcePrice) {
-        if (document.getElementById("cookie").getAttribute("src") == "/res/img/dirt.avif") {
+        if (document.getElementById("cookie").getAttribute("src") == "/res/img/dirt.jfif") {
             document.getElementById("cookie").src = "res/img/wood.jpeg";
             resetProgress();
         }
@@ -115,7 +115,7 @@ function resetProgress() {
     clickUpgradeIncrease += 10;
     resourcePrice *= 8;
     resourceUpgradePrice += 10;
-    
+    upgradeCount = 0;
     progressBar == 0;
     document.getElementById("progressBar").style.width = 0 + "%";
     x = 100 / resourceUpgradePrice;
