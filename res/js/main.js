@@ -30,43 +30,43 @@ let ExcavatorIncrease = 10;
 
 upgradeResource.onclick = () => {
     if (upgradeCount >= resourceUpgradePrice && numberOfCookies >= resourcePrice) {
-        if (document.getElementById("cookie").getAttribute("src") == "/res/img/dirt.jfif") {
-            document.getElementById("cookie").src = "res/img/wood.jpeg";
+        if (document.getElementById("cookie").getAttribute("src") == "/res/img/dirt.png") {
+            document.getElementById("cookie").src = "res/img/wood.png";
             resetProgress();
         }
-          else if (document.getElementById("cookie").getAttribute("src") == "res/img/wood.jpeg") {
-            document.getElementById("cookie").src = "res/img/stone.jpeg";
+          else if (document.getElementById("cookie").getAttribute("src") == "res/img/wood.png") {
+            document.getElementById("cookie").src = "res/img/stone.png";
             resetProgress();
         } 
-        else if (document.getElementById("cookie").getAttribute("src") == "res/img/stone.jpeg") {
-            document.getElementById("cookie").src = "res/img/copper.jpeg";
+        else if (document.getElementById("cookie").getAttribute("src") == "res/img/stone.png") {
+            document.getElementById("cookie").src = "res/img/copper.png";
             resetProgress();
         } 
-        else if (document.getElementById("cookie").getAttribute("src") == "res/img/copper.jpeg") {
-            document.getElementById("cookie").src = "res/img/tin.jpeg";
+        else if (document.getElementById("cookie").getAttribute("src") == "res/img/copper.png") {
+            document.getElementById("cookie").src = "res/img/tin.png";
             resetProgress();
         } 
-        else if (document.getElementById("cookie").getAttribute("src") == "res/img/tin.jpeg") {
-            document.getElementById("cookie").src = "res/img/tantalum.jpg";
+        else if (document.getElementById("cookie").getAttribute("src") == "res/img/tin.png") {
+            document.getElementById("cookie").src = "res/img/tantalum.png";
             resetProgress();
         } 
-        else if (document.getElementById("cookie").getAttribute("src") == "res/img/tantalum.jpg") {
-            document.getElementById("cookie").src = "res/img/lithium.jpeg";
+        else if (document.getElementById("cookie").getAttribute("src") == "res/img/tantalum.png") {
+            document.getElementById("cookie").src = "res/img/lithium.png";
             resetProgress();
         } 
-        else if (document.getElementById("cookie").getAttribute("src") == "res/img/lithium.jpeg") {
+        else if (document.getElementById("cookie").getAttribute("src") == "res/img/lithium.png") {
             document.getElementById("cookie").src = "res/img/cobalt.png";
             resetProgress();
         } 
-        else  if (document.getElementById("cookie").getAttribute("src") == "res/img/cobalt.jpeg") {
-            document.getElementById("cookie").src = "res/img/gold.jpeg";
+        else  if (document.getElementById("cookie").getAttribute("src") == "res/img/cobalt.png") {
+            document.getElementById("cookie").src = "res/img/gold.png";
             resetProgress();
         } 
-        else  if (document.getElementById("cookie").getAttribute("src") == "res/img/gold.jpeg") {
-            document.getElementById("cookie").src = "res/img/diamond.jpeg";
+        else  if (document.getElementById("cookie").getAttribute("src") == "res/img/gold.png") {
+            document.getElementById("cookie").src = "res/img/diamond.png";
             resetProgress();
         } 
-        else if (document.getElementById("cookie").getAttribute("src") == "res/img/diamond.jpeg"){
+        else if (document.getElementById("cookie").getAttribute("src") == "res/img/diamond.png"){
             upgradeResource.innerHTML = "MAXED";
             progressBar.innerHTML = " ";
            

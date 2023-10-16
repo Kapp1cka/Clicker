@@ -4,8 +4,8 @@
 * {
     font-family: 'Rubik Mono One', sans-serif;
     user-select: none;
-    
     color: rgb(179, 80, 0) !important;
+    stroke: white 5px !important;
 }
 
 
@@ -43,3 +43,4 @@ html, body {
 #cookie:active {
     transform: scale(0.9);
 }
+
