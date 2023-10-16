@@ -80,10 +80,10 @@ upgradeResource.onclick = () => {
     }
 }
 function pictureChange() {
-    if (document.getElementById("shopIcon").getAttribute("src") == "/res/img/shopicon.png") {
+    if (document.getElementById("shopIcon").getAttribute("src") == "res/img/shopicon.png") {
         document.getElementById("shopIcon").src = "res/img/close.png";
     } else {
-        document.getElementById("shopIcon").src = "/res/img/shopicon.png";
+        document.getElementById("shopIcon").src = "res/img/shopicon.png";
     }
 }
 
