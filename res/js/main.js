@@ -79,28 +79,9 @@ upgradeResource.onclick = () => {
         alert("not enough money/resources");
     }
 }
-function pictureChange() {
-    if (document.getElementById("shopIcon").getAttribute("src") == "res/img/shopicon.png") {
-        document.getElementById("shopIcon").src = "res/img/close.png";
-    } else {
-        document.getElementById("shopIcon").src = "res/img/shopicon.png";
-    }
-}
 
 
 
-document.getElementById("shopIcon").addEventListener('click', pictureChange);
-
-
-
-cookie.onclick = () => {
-    numberOfCookies += clickUpgradeIncrease;
-    //counter.innerHTML = "Cookies: " + numberOfCookies;
-    counter.innerHTML = `MONEY: ${Math.round(numberOfCookies)}`;
-};
-
-
-//apgrejd
 let x = 100 / resourceUpgradePrice;
 let y =x
 function updateProgress() {
@@ -122,6 +103,26 @@ function resetProgress() {
     y = x;
     console.log(`${resourceUpgradePrice} ${resourcePrice} ${x}`);
 }
+function pictureChange() {
+    if (document.getElementById("shopIcon").getAttribute("src") == "res/img/shopicon.png") {
+        document.getElementById("shopIcon").src = "res/img/close.png";
+    } else {
+        document.getElementById("shopIcon").src = "res/img/shopicon.png";
+    }
+}
+
+document.getElementById("shopIcon").addEventListener('click', pictureChange);
+
+
+
+cookie.onclick = () => {
+    numberOfCookies += clickUpgradeIncrease;
+    //counter.innerHTML = "Cookies: " + numberOfCookies;
+    counter.innerHTML = `MONEY: ${Math.round(numberOfCookies)}`;
+};
+
+
+//apgrejd
 
 const clickUpgradeFunction = () => {
     if (numberOfCookies >= costOfClickUpgrade) {
@@ -131,7 +132,7 @@ const clickUpgradeFunction = () => {
         counter.innerHTML = `MONEY: ${Math.round(numberOfCookies)}`;
         //zvedneme pocet susenek na klik
         clickUpgradeIncrease++;
-        costOfClickUpgrade *= 1.5;
+        costOfClickUpgrade *= 1.2;
         clickUpgrade.innerHTML = `Buy better tools: ${Math.round(costOfClickUpgrade)}`
         updateProgress();
         x +=y
@@ -147,7 +148,7 @@ const excavatorUpgradeFunction = () => {
         counter.innerHTML = `MONEY: ${Math.round(numberOfCookies)}`;
         //zvedneme pocet susenek na klik
         ExcavatorIncrease+=10;
-        costOfExcavator *= 1.4;
+        costOfExcavator *= 1.2;
         excavatorUpgrade.innerText = `Buy excavator: ${Math.round(costOfExcavator)}`;
 
     }
@@ -165,7 +166,7 @@ autoClicker.onclick = () => {
         //zvyseni ucinnosti
         autoclickIncrease++;
         //cena
-        autoclickerPrice *= 1.5;
+        autoclickerPrice *= 1.3;
         autoClicker.innerText = "Buy slave: " + Math.round(autoclickerPrice);
         //clear
         clearInterval(automatickeklikani);
@@ -185,7 +186,7 @@ Otrokarna.onclick = () => {
         //zvyseni ucinnosti
         lepsiOtrok+= 10;
         //cena
-        lepsiOtrokCena *= 1.5;
+        lepsiOtrokCena *= 1.3;
         Otrokarna.innerText = "Buy slave: " + Math.round(lepsiOtrokCena);
         //clear
         clearInterval(otrok);
@@ -213,28 +214,18 @@ update();
 
 
 
-//CHEATY!!!!!
-//function nazev()  {}
-function cheats() {
-    console.log("cheats on");
-    numberOfCookies += 1000000;
-    counter.innerHTML = "Cookies: " + numberOfCookies;
-}
+// //CHEATY!!!!!
+// //function nazev()  {}
+// function cheats() {
+//     console.log("cheats on");
+//     numberOfCookies += 1000000;
+//     counter.innerHTML = "Cookies: " + numberOfCookies;
+// }
 
 
-const cheats2 = () => {
-    console.log("cheats on");
-    numberOfCookies *= 2;
-    counter.innerHTML = "Cookies: " + numberOfCookies;
-}
+// const cheats2 = () => {
+//     console.log("cheats on");
+//     numberOfCookies *= 2;
+//     counter.innerHTML = "Cookies: " + numberOfCookies;
+// }
 
-
-
-
-
-let i = 0;
-while (i<12) {
-    cheats();
-    cheats2();
-    i++;
-}
